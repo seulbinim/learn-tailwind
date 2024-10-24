@@ -1,0 +1,130 @@
+/* base 스타일 재구성 */
+@layer base {
+  button {
+    @apply cursor-pointer;
+  }
+
+  button:disabled {
+    @apply cursor-not-allowed;
+  }
+
+  abbr[title] {
+    @apply cursor-help no-underline;
+  }
+}
+
+@layer components {
+  .button {
+    @apply px-4
+	    py-2
+	    rounded-lg
+	    bg-slate-700
+	    text-slate-100
+	    dark:bg-slate-200
+	    dark:text-slate-800;
+  }
+}
+
+@layer utilities {
+  .text-pesto-100 {
+    color: #e8e4d6;
+  }
+  .text-pesto-200 {
+    color: #d1caac;
+  }
+  .text-pesto-300 {
+    color: #bbaf83;
+  }
+  .text-pesto-400 {
+    color: #a49559;
+  }
+  .text-pesto-500 {
+    color: #8d7a30;
+  }
+  .text-pesto-600 {
+    color: #716226;
+  }
+  .text-pesto-700 {
+    color: #55491d;
+  }
+  .text-pesto-800 {
+    color: #383113;
+  }
+  .text-pesto-900 {
+    color: #1c180a;
+  }
+  .bg-pesto-100 {
+    background-color: #e8e4d6;
+  }
+  .bg-pesto-200 {
+    background-color: #d1caac;
+  }
+  .bg-pesto-300 {
+    background-color: #bbaf83;
+  }
+  .bg-pesto-400 {
+    background-color: #a49559;
+  }
+  .bg-pesto-500 {
+    background-color: #8d7a30;
+  }
+  .bg-pesto-600 {
+    background-color: #716226;
+  }
+  .bg-pesto-700 {
+    background-color: #55491d;
+  }
+  .bg-pesto-800 {
+    background-color: #383113;
+  }
+  .bg-pesto-900 {
+    background-color: #1c180a;
+  }
+}
+
+body {
+  background: theme("colors.slate.900");
+}
+
+@media screen(sm) {
+  body {
+    background: theme("colors.slate.700");
+  }
+}
+
+@media screen(md) {
+  body {
+    background: theme("colors.slate.500");
+  }
+}
+
+@media screen(lg) {
+  body {
+    background: theme("colors.slate.200");
+  }
+}
+
+/* 스타일 재사용 */
+.avatar-card {
+  @apply w-[290px] bg-white flex flex-col md:grid md:grid-cols-[120px_1fr] md:w-[500px] gap-6 p-6 rounded-2xl shadow-2xl;
+
+  .avatar-card__image {
+    @apply hover:border-4 hover:border-solid hover:border-yellow-700 w-24 h-24 self-center rounded-full;
+  }
+
+  .avatar-card__caption {
+    @apply space-y-4;
+
+    strong {
+      @apply text-3xl text-gray-700;
+    }
+
+    p {
+      @apply text-lg;
+    }
+
+    a {
+      @apply text-cyan-600 focus:outline-none focus:ring-2 focus:ring-yellow-700 focus:ring-offset-2 focus:rounded-sm active:text-red-500 font-bold inline-block;
+    }
+  }
+}
