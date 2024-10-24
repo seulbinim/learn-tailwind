@@ -747,11 +747,29 @@ abbr[title] {
   color: #bbaf83;
 }
 
-.text-pesto-900 {
-  color: #1c180a;
+/* base 스타일 재구성 */
+
+body {
+  background: #0f172a;
 }
 
-/* base 스타일 재구성 */
+@media (min-width: 640px) {
+  body {
+    background: #334155;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background: #64748b;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: #e2e8f0;
+  }
+}
 
 /* 스타일 재사용 */
 
