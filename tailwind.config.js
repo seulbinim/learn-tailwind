@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         suit: ['"SUIT Variable", "sans-serif"'],
+        pretendard: ["Pretendard Variable", "Pretendard", "sans-serif"],
+        "noto-serif": ["Noto Serif KR", "serif"],
       },
     },
   },

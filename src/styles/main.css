@@ -1,3 +1,128 @@
+/* base 스타일 재구성 */
+
+body {
+  background: #0f172a;
+}
+
+@media (min-width: 640px) {
+  body {
+    background: #334155;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background: #64748b;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: #e2e8f0;
+  }
+}
+
+/* 스타일 재사용 */
+
+.avatar-card {
+  display: flex;
+  width: 290px;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1.5rem;
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 768px) {
+  .avatar-card {
+    display: grid;
+    width: 500px;
+    grid-template-columns: 120px 1fr;
+  }
+}
+
+.avatar-card {
+  .avatar-card__image {
+    height: 6rem;
+  }
+  .avatar-card__image {
+    width: 6rem;
+  }
+  .avatar-card__image {
+    align-self: center;
+  }
+  .avatar-card__image {
+    border-radius: 9999px;
+  }
+  .avatar-card__image:hover {
+    border-width: 4px;
+  }
+  .avatar-card__image:hover {
+    border-style: solid;
+  }
+  .avatar-card__image:hover {
+    --tw-border-opacity: 1;
+    border-color: rgb(161 98 7 / var(--tw-border-opacity));
+  }
+  .avatar-card__caption > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  }
+  .avatar-card__caption {
+    strong {
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+    }
+    strong {
+      --tw-text-opacity: 1;
+      color: rgb(55 65 81 / var(--tw-text-opacity));
+    }
+    p {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
+    a {
+      display: inline-block;
+    }
+    a {
+      font-weight: 700;
+    }
+    a {
+      --tw-text-opacity: 1;
+      color: rgb(8 145 178 / var(--tw-text-opacity));
+    }
+    a:focus {
+      border-radius: 0.125rem;
+    }
+    a:focus {
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+    }
+    a:focus {
+      --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+      --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+      box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+    }
+    a:focus {
+      --tw-ring-opacity: 1;
+      --tw-ring-color: rgb(161 98 7 / var(--tw-ring-opacity));
+    }
+    a:focus {
+      --tw-ring-offset-width: 2px;
+    }
+    a:active {
+      --tw-text-opacity: 1;
+      color: rgb(239 68 68 / var(--tw-text-opacity));
+    }
+  }
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -106,9 +231,7 @@
   --tw-contain-style:  ;
 }
 
-/*
-! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com
-*/
+/* ! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -554,6 +677,63 @@ video {
   display: none;
 }
 
+/* SUIT Variable */
+
+@font-face {
+  font-family: "SUIT Variable";
+
+  font-weight: 100 900;
+
+  src: url("/src/assets/font/suit/SUIT-Variable.woff2") format("woff2-variations");
+}
+
+/* Pretendard Font */
+
+@font-face {
+  font-family: "Pretendard Variable";
+
+  font-weight: 45 920;
+
+  font-style: normal;
+
+  font-display: swap;
+
+  src: url("/src/assets/font/pretendard/woff2/PretendardVariable.woff2") format("woff2-variations");
+}
+
+/* Noto Serif Font */
+
+@font-face {
+  font-family: "Noto Serif KR";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  src: local("Noto Serif CJK KR"), local("Source Han Serif K"), local("Source Han Serif"), local("Noto Serif CJK"), local("Noto Serif"), url(/src/assets/font/notoserif/web/NotoSerifCJKkr-ExtraLight-subset.woff) format("woff"), url(/src/assets/font/notoserif/web/NotoSerifCJKkr-ExtraLight-subset.woff2) format("woff2"), url(/src/assets/font/notoserif/web/NotoSerifCJKkr-ExtraLight-subset.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Noto Serif KR";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  src: local("Noto Serif CJK KR"), local("Source Han Serif K"), local("Source Han Serif"), local("Noto Serif CJK"), local("Noto Serif"), url(/src/assets/font/notoserif/web/NotoSerifCJKkr-Regular-subset.woff) format("woff"), url(/src/assets/font/notoserif/web/NotoSerifCJKkr-Regular-subset.woff2) format("woff2"), url(/src/assets/font/notoserif/web/NotoSerifCJKkr-Regular-subset.otf) format("otf"), url(/src/assets/font/notoserif/web/NotoSerifCJKkr-Regular-subset.ttf) format("truetype"),
+      /* Safari, Android, iOS */;
+}
+
+@font-face {
+  font-family: "Noto Serif KR";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  src: local("Noto Serif CJK KR"), local("Source Han Serif K"), local("Source Han Serif"), local("Noto Serif CJK"), local("Noto Serif"), url(/src/assets/font/notoserif/web/NotoSerifCJKkr-Bold-subset.woff) format("woff"), url(/src/assets/font/notoserif/web/NotoSerifCJKkr-Bold-subset.woff2) format("woff2"), url(/src/assets/font/notoserif/web/NotoSerifCJKkr-Bold-subset.otf) format("otf");
+}
+
 button {
   cursor: pointer;
 }
@@ -704,8 +884,16 @@ abbr[title] {
   padding: 1.5rem;
 }
 
+.font-pretendard {
+  font-family: Pretendard Variable, Pretendard, sans-serif;
+}
+
 .font-suit {
   font-family: "SUIT Variable", "sans-serif";
+}
+
+.font-noto-serif {
+  font-family: Noto Serif KR, serif;
 }
 
 .text-3xl {
@@ -753,131 +941,6 @@ abbr[title] {
 
 .text-pesto-300 {
   color: #bbaf83;
-}
-
-/* base 스타일 재구성 */
-
-body {
-  background: #0f172a;
-}
-
-@media (min-width: 640px) {
-  body {
-    background: #334155;
-  }
-}
-
-@media (min-width: 768px) {
-  body {
-    background: #64748b;
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    background: #e2e8f0;
-  }
-}
-
-/* 스타일 재사용 */
-
-.avatar-card {
-  display: flex;
-  width: 290px;
-  flex-direction: column;
-  gap: 1.5rem;
-  border-radius: 1rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding: 1.5rem;
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-@media (min-width: 768px) {
-  .avatar-card {
-    display: grid;
-    width: 500px;
-    grid-template-columns: 120px 1fr;
-  }
-}
-
-.avatar-card {
-  .avatar-card__image {
-    height: 6rem;
-  }
-  .avatar-card__image {
-    width: 6rem;
-  }
-  .avatar-card__image {
-    align-self: center;
-  }
-  .avatar-card__image {
-    border-radius: 9999px;
-  }
-  .avatar-card__image:hover {
-    border-width: 4px;
-  }
-  .avatar-card__image:hover {
-    border-style: solid;
-  }
-  .avatar-card__image:hover {
-    --tw-border-opacity: 1;
-    border-color: rgb(161 98 7 / var(--tw-border-opacity));
-  }
-  .avatar-card__caption > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-  }
-  .avatar-card__caption {
-    strong {
-      font-size: 1.875rem;
-      line-height: 2.25rem;
-    }
-    strong {
-      --tw-text-opacity: 1;
-      color: rgb(55 65 81 / var(--tw-text-opacity));
-    }
-    p {
-      font-size: 1.125rem;
-      line-height: 1.75rem;
-    }
-    a {
-      display: inline-block;
-    }
-    a {
-      font-weight: 700;
-    }
-    a {
-      --tw-text-opacity: 1;
-      color: rgb(8 145 178 / var(--tw-text-opacity));
-    }
-    a:focus {
-      border-radius: 0.125rem;
-    }
-    a:focus {
-      outline: 2px solid transparent;
-      outline-offset: 2px;
-    }
-    a:focus {
-      --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-      --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-      box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-    }
-    a:focus {
-      --tw-ring-opacity: 1;
-      --tw-ring-color: rgb(161 98 7 / var(--tw-ring-opacity));
-    }
-    a:focus {
-      --tw-ring-offset-width: 2px;
-    }
-    a:active {
-      --tw-text-opacity: 1;
-      color: rgb(239 68 68 / var(--tw-text-opacity));
-    }
-  }
 }
 
 .hover\:border-4:hover {
