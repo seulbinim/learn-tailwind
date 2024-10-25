@@ -766,6 +766,14 @@ abbr[title] {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .m-10 {
   margin: 2.5rem;
 }
@@ -792,12 +800,20 @@ abbr[title] {
   display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+}
+
 .h-20 {
   height: 5rem;
 }
 
 .h-24 {
   height: 6rem;
+}
+
+.h-6 {
+  height: 1.5rem;
 }
 
 .h-screen {
@@ -816,6 +832,10 @@ abbr[title] {
   width: 6rem;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
 .w-\[290px\] {
   width: 290px;
 }
@@ -826,6 +846,12 @@ abbr[title] {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.appearance-none {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .flex-row-reverse {
@@ -852,8 +878,16 @@ abbr[title] {
   justify-content: space-between;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-6 {
@@ -862,18 +896,6 @@ abbr[title] {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-5 {
-  gap: 1.25rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
@@ -913,19 +935,14 @@ abbr[title] {
   background-color: rgb(249 168 212 / var(--tw-bg-opacity));
 }
 
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-slate-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
 .bg-violet-300 {
@@ -933,29 +950,41 @@ abbr[title] {
   background-color: rgb(196 181 253 / var(--tw-bg-opacity));
 }
 
-.bg-green-300 {
+.bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(134 239 172 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\/src\/assets\/icon\/checkbox-circle-unchecked\.svg\)\] {
+  background-image: url(/src/assets/icon/checkbox-circle-unchecked.svg);
+}
+
+.bg-checkbox-unchecked {
+  background-image: url('/src/assets/icon/checkbox-circle-unchecked.svg');
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .fill-primary-300 {
   fill: #22be61;
 }
 
-.fill-secondary-200 {
-  fill: #4284f7;
-}
-
 .fill-tertiary-200 {
   fill: #e39042;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .p-6 {
   padding: 1.5rem;
 }
 
-.p-5 {
-  padding: 1.25rem;
+.pl-8 {
+  padding-left: 2rem;
 }
 
 .font-pretendard {
@@ -996,9 +1025,9 @@ abbr[title] {
   color: rgb(8 145 178 / var(--tw-text-opacity));
 }
 
-.text-white {
+.text-gray-400 {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .text-primary-300 {
@@ -1011,9 +1040,9 @@ abbr[title] {
   color: rgb(227 144 66 / var(--tw-text-opacity));
 }
 
-.text-gray-400 {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1082,32 +1111,25 @@ abbr[title] {
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
-.group:hover .group-hover\:bg-primary-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(34 190 97 / var(--tw-bg-opacity));
-}
-
-.group:hover .group-hover\:bg-tertiary-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(227 144 66 / var(--tw-bg-opacity));
+.group:hover .group-hover\:fill-primary-300 {
+  fill: #22be61;
 }
 
 .group:hover .group-hover\:fill-tertiary-200 {
   fill: #e39042;
 }
 
-.group:hover .group-hover\:fill-primary-300 {
-  fill: #22be61;
-}
-
-.group:hover .group-hover\:text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .group:hover .\*\:group-hover\:text-white > * {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.peer:checked ~ .peer-checked\:bg-\[url\(\/src\/assets\/icon\/checkbox-circle-checked\.svg\)\] {
+  background-image: url(/src/assets/icon/checkbox-circle-checked.svg);
+}
+
+.peer:checked ~ .peer-checked\:bg-checkbox-checked {
+  background-image: url('/src/assets/icon/checkbox-circle-checked.svg');
 }
 
 @media (min-width: 640px) {
