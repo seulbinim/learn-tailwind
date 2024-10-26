@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
@@ -9,13 +9,13 @@
   </head>
   <body class="bg-violet-300 p-5 font-suit">
     <!-- 배경이미지(checkbox-circle-unchecked.svg) 지정, 형제 요소인 input 요소가 checked 상태일 때 label 요소의 배경이미지가 (checkbox-circle-checked.svg)로 변경되도록 설정 -->
-    <div class="inline-flex relative">
-      <input class="appearance-none peer absolute w-6 h-6" type="checkbox" name="checkbox-1" id="checkbox-1" />
+    <div class="relative inline-flex">
+      <input class="peer absolute h-6 w-6 appearance-none" type="checkbox" name="checkbox-1" id="checkbox-1" />
       <label class="h-6 bg-[url(/src/assets/icon/checkbox-circle-unchecked.svg)] bg-no-repeat pl-8 peer-checked:bg-[url(/src/assets/icon/checkbox-circle-checked.svg)]" for="checkbox-1">로그인 상태 유지</label>
     </div>
     <hr class="my-5" />
-    <div class="inline-flex relative">
-      <input class="appearance-none peer absolute w-6 h-6" type="checkbox" name="checkbox-2" id="checkbox-2" />
+    <div class="relative inline-flex">
+      <input class="peer absolute h-6 w-6 appearance-none" type="checkbox" name="checkbox-2" id="checkbox-2" />
       <label class="h-6 bg-checkbox-unchecked bg-no-repeat pl-8 peer-checked:bg-checkbox-checked" for="checkbox-2">로그인 상태 유지</label>
     </div>
   </body>

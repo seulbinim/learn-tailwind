@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="/src/styles/main.css" />
   </head>
   <body class="bg-slate-300 font-suit">
-    <header class="py-5 px-6 lg:px-5 lg:py-10 bg-Black grid grid-cols-[1fr_auto_auto] gap-2 lg:gap-3">
-      <h1 class="self-center ml-5">
+    <header class="grid grid-cols-[1fr_auto_auto] gap-2 bg-Black px-6 py-5 lg:gap-3 lg:px-5 lg:py-10">
+      <h1 class="ml-5 self-center">
         <a href="/" class="inline-flex max-w-20 lg:max-w-36">
           <picture>
             <source srcset="/src/assets/logo/netflix@1x.png 1x, /src/assets/logo/netflix@2x.png 2x" type="image/webp" />
@@ -18,8 +18,8 @@
         </a>
       </h1>
 
-      <div class="self-center relative border inline-flex text-Gray-300 rounded-default">
-        <svg class="left-2 lg:left-3 size-3 lg:size-4 absolute top-1/2 translate -translate-y-1/2">
+      <div class="relative inline-flex self-center rounded-default border text-Gray-300">
+        <svg class="translate absolute left-2 top-1/2 size-3 -translate-y-1/2 lg:left-3 lg:size-4">
           <use href="/src/assets/sprite/icons.svg#global" />
         </svg>
 
@@ -29,12 +29,12 @@
           <option value="english">영어</option>
         </select>
 
-        <svg class="right-2 lg:right-3 size-3 lg:size-4 absolute top-1/2 translate -translate-y-1/2">
+        <svg class="translate absolute right-2 top-1/2 size-3 -translate-y-1/2 lg:right-3 lg:size-4">
           <use href="/src/assets/sprite/icons.svg#triangle" />
         </svg>
       </div>
 
-      <a href="/" class="self-center inline-flex rounded-default text-xs lg:text-base bg-Red-500 text-white px-5 py-1.5 lg:py-2.5 font-bold">로그인</a>
+      <a href="/" class="inline-flex self-center rounded-default bg-Red-500 px-5 py-1.5 text-xs font-bold text-white lg:py-2.5 lg:text-base">로그인</a>
     </header>
   </body>
 </html>
