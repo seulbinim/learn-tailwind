@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/src/pages/css/index.css" />
     <script type="module" src="/src/js/kream.js"></script>
   </head>
-  <body class="bg-kream-white text-kream-primary dark:bg-kream-primary dark:text-kream-white scrollbar-hide overflow-y-scroll pb-20 font-pretendard">
+  <body class="scrollbar-y-scroll bg-kream-white pb-20 font-pretendard text-kream-primary scrollbar-hide dark:bg-kream-primary dark:text-kream-white">
     <header class="max-container flex gap-2 border-b-2 p-5 sm:mx-auto sm:flex-wrap sm:gap-y-5 sm:border-none">
       <h1 class="brand mr-auto">
         <a href="/" class="kream--logo inline-flex align-middle">
@@ -56,7 +56,7 @@
         </svg>
       </button>
       <nav class="contents">
-        <div class="kream--member translate sm:max-w-auto bg-kream-secondary dark:bg-kream-primary text-p-md sm:text-p-sm fixed right-0 top-[66px] z-10 flex h-svh w-[55.625%] max-w-80 translate-x-full flex-col items-center gap-5 border-b-2 border-current pt-12 shadow-lg sm:static sm:-order-1 sm:h-auto sm:w-full sm:max-w-none sm:translate-x-0 sm:flex-row sm:justify-end sm:border-none sm:bg-transparent sm:py-0 sm:shadow-none">
+        <div class="kream--member translate sm:max-w-auto fixed right-0 top-[66px] z-10 flex h-svh w-[55.625%] max-w-80 translate-x-full flex-col items-center gap-5 border-b-2 border-current bg-kream-secondary pt-12 text-p-md shadow-lg sm:static sm:-order-1 sm:h-auto sm:w-full sm:max-w-none sm:translate-x-0 sm:flex-row sm:justify-end sm:border-none sm:bg-transparent sm:py-0 sm:text-p-sm sm:shadow-none dark:bg-kream-primary">
           <h2 class="sr-only">멤버 서비스</h2>
           <ul class="contents">
             <li><a href="/">고객센터</a></li>
@@ -69,7 +69,7 @@
             <span class="fa-solid fa-xmark" aria-hidden="true"></span>
           </button>
         </div>
-        <div class="bg-kream-secondary dark:bg-kream-primary fixed inset-x-0 bottom-0 grid grid-cols-4 justify-items-center border-t-2 p-4 sm:static sm:flex sm:items-center sm:gap-7 sm:border-none sm:bg-transparent sm:p-0">
+        <div class="fixed inset-x-0 bottom-0 z-50 grid grid-cols-4 justify-items-center border-t-2 bg-kream-secondary p-4 sm:static sm:flex sm:items-center sm:gap-7 sm:border-none sm:bg-transparent sm:p-0 dark:bg-kream-primary">
           <h2 class="sr-only">카테고리</h2>
           <ul class="contents">
             <li>
@@ -100,11 +100,11 @@
     <main class="pb-9">
       <div class="tabs">
         <div class="tablist manual max-container mx-auto flex gap-5 px-5 lg:gap-7">
-          <button tabindex="-1" role="tab" id="tab-1" aria-controls="tab-panel-1" aria-selected="true" type="button" class="h-9.5 text-p-sm sm:text-p-lg border-b-4 border-current font-bold">추천</button>
-          <button tabindex="-1" role="tab" id="tab-2" aria-controls="tab-panel-2" aria-selected="false" type="button" class="h-9.5 text-p-sm sm:text-p-lg border-b-4 border-transparent">랭킹</button>
-          <button tabindex="-1" role="tab" id="tab-3" aria-controls="tab-panel-3" aria-selected="false" type="button" class="h-9.5 text-p-sm sm:text-p-lg border-b-4 border-transparent">남성</button>
-          <button tabindex="-1" role="tab" id="tab-4" aria-controls="tab-panel-4" aria-selected="false" type="button" class="h-9.5 text-p-sm sm:text-p-lg border-b-4 border-transparent">여성</button>
-          <button tabindex="-1" role="tab" id="tab-5" aria-controls="tab-panel-5" aria-selected="false" type="button" class="h-9.5 text-p-sm sm:text-p-lg border-b-4 border-transparent">발견</button>
+          <button tabindex="-1" role="tab" id="tab-1" aria-controls="tab-panel-1" aria-selected="true" type="button" class="h-9.5 border-b-4 border-current text-p-sm font-bold sm:text-p-lg">추천</button>
+          <button tabindex="-1" role="tab" id="tab-2" aria-controls="tab-panel-2" aria-selected="false" type="button" class="h-9.5 border-b-4 border-transparent text-p-sm sm:text-p-lg">랭킹</button>
+          <button tabindex="-1" role="tab" id="tab-3" aria-controls="tab-panel-3" aria-selected="false" type="button" class="h-9.5 border-b-4 border-transparent text-p-sm sm:text-p-lg">남성</button>
+          <button tabindex="-1" role="tab" id="tab-4" aria-controls="tab-panel-4" aria-selected="false" type="button" class="h-9.5 border-b-4 border-transparent text-p-sm sm:text-p-lg">여성</button>
+          <button tabindex="-1" role="tab" id="tab-5" aria-controls="tab-panel-5" aria-selected="false" type="button" class="h-9.5 border-b-4 border-transparent text-p-sm sm:text-p-lg">발견</button>
         </div>
         <div role="tabpanel" id="tabpanel-1" aria-labelledby="tab-1" class="tabpanel flex flex-col gap-9">
           <section class="bg-kream-orange">
@@ -119,11 +119,11 @@
           </section>
           <section class="kream--recommand max-container mx-auto px-5">
             <h2 class="sr-only">크림 추천 상품</h2>
-            <ul class="sm:max-container text-p-sm grid grid-cols-2 gap-x-5 gap-y-3 sm:mx-auto sm:grid-cols-5" id="list1">
+            <ul class="sm:max-container grid grid-cols-2 gap-x-5 gap-y-3 text-p-sm sm:mx-auto sm:grid-cols-5" id="list1">
               <li>
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/recommand/recommand-product-01.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/recommand/recommand-product-01.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">남성추천</figcaption>
                   </figure>
                 </a>
@@ -131,7 +131,7 @@
               <li>
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/recommand/recommand-product-02.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/recommand/recommand-product-02.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">여성추천</figcaption>
                   </figure>
                 </a>
@@ -139,7 +139,7 @@
               <li class="hidden sm:block">
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/recommand/recommand-product-03.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/recommand/recommand-product-03.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">색다른 추천</figcaption>
                   </figure>
                 </a>
@@ -147,7 +147,7 @@
               <li class="hidden sm:block">
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/recommand/recommand-product-04.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/recommand/recommand-product-04.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">정가 아래</figcaption>
                   </figure>
                 </a>
@@ -155,7 +155,7 @@
               <li class="hidden sm:block">
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/recommand/recommand-product-05.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/recommand/recommand-product-05.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">트루릴리전 X 소버</figcaption>
                   </figure>
                 </a>
@@ -163,7 +163,7 @@
               <li class="hidden sm:block">
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/recommand/recommand-product-06.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/recommand/recommand-product-06.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">구해요</figcaption>
                   </figure>
                 </a>
@@ -171,7 +171,7 @@
               <li class="hidden sm:block">
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/recommand/recommand-product-07.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/recommand/recommand-product-07.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">KREAM 카드</figcaption>
                   </figure>
                 </a>
@@ -179,7 +179,7 @@
               <li class="hidden sm:block">
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/recommand/recommand-product-08.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/recommand/recommand-product-08.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">봄 출근록</figcaption>
                   </figure>
                 </a>
@@ -187,7 +187,7 @@
               <li class="hidden sm:block">
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/recommand/recommand-product-09.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/recommand/recommand-product-09.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">인기 일본 브랜드</figcaption>
                   </figure>
                 </a>
@@ -195,13 +195,13 @@
               <li class="hidden sm:block">
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/recommand/recommand-product-10.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/recommand/recommand-product-10.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">이유 있는 베스트</figcaption>
                   </figure>
                 </a>
               </li>
             </ul>
-            <button type="button" data-list-id="list1" class="kream--more text-p-sm mx-auto my-4 flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle sm:hidden">더보기</button>
+            <button type="button" data-list-id="list1" class="kream--more mx-auto my-4 flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm sm:hidden">더보기</button>
           </section>
           <div class="max-container mx-auto w-full px-5">
             <div class="border-lightgray border-t"></div>
@@ -211,7 +211,7 @@
               <span class="text-h-md font-bold">Just Dropped</span>
               <span class="text-p-md">발매 상품</span>
             </h2>
-            <ul class="scrollbar-hide grid grid-cols-[repeat(5,minmax(232px,_1fr))] gap-5 overflow-x-scroll">
+            <ul class="grid grid-cols-[repeat(5,minmax(232px,_1fr))] gap-5 overflow-x-scroll scrollbar-hide">
               <li>
                 <article class="flex flex-col gap-3">
                   <a href="/" class="contents">
@@ -220,8 +220,8 @@
                       <p class="text-p-sm">Problemallways Logo Denim Pocket Camp Cap Blue</p>
                     </div>
                     <div class="flex gap-1.5">
-                      <span class="text-p-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">적립</span>
-                      <span class="text-p-sm text-kream-green inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm">적립</span>
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm text-kream-green">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M9.625 1.16669H5.54167L3.5 7.58335H6.41667L4.375 12.8334H5.25L9.91667 6.41669H7.29167L9.625 1.16669Z" fill="currentColor" />
                         </svg>
@@ -229,16 +229,16 @@
                       </span>
                     </div>
                     <div class="flex flex-wrap gap-x-3">
-                      <span class="text-h-md text-kream-red font-bold not-italic">10%<span class="sr-only">할인</span></span>
-                      <span class="text-p-sm order-1 w-full">구매가</span>
+                      <span class="text-h-md font-bold not-italic text-kream-red">10%<span class="sr-only">할인</span></span>
+                      <span class="order-1 w-full text-p-sm">구매가</span>
                       <span class="text-h-md font-bold">76,500원</span>
                     </div>
                   </a>
                   <div class="relative -order-1">
-                    <a href="/" class="bg-kream-secondary block rounded-lg">
+                    <a href="/" class="block rounded-lg bg-kream-secondary">
                       <img src="/src/assets/kream/just-dropped/dropped-product-01.webp" alt="" />
                     </a>
-                    <button type="button" class="text-kream-primary absolute bottom-4 right-4 inline-flex size-6 items-center justify-center" aria-label="관심상품 담기">
+                    <button type="button" class="absolute bottom-4 right-4 inline-flex size-6 items-center justify-center text-kream-primary" aria-label="관심상품 담기">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_2006_189)">
                           <path d="M17 3H7C5.9 3 5.01 3.9 5.01 5L5 21L12 18L19 21V5C19 3.9 18.1 3 17 3ZM17 18L12 15.82L7 18V5H17V18Z" fill="currentColor" />
@@ -261,8 +261,8 @@
                       <p class="text-p-sm">Undermycar Mu.22 Anti Fxxking Logo Play Slim Inner Hood Zip-up Black</p>
                     </div>
                     <div class="flex gap-1.5">
-                      <span class="text-p-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">적립</span>
-                      <span class="text-p-sm text-kream-green inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm">적립</span>
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm text-kream-green">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M9.625 1.16669H5.54167L3.5 7.58335H6.41667L4.375 12.8334H5.25L9.91667 6.41669H7.29167L9.625 1.16669Z" fill="currentColor" />
                         </svg>
@@ -270,15 +270,15 @@
                       </span>
                     </div>
                     <div class="flex flex-wrap gap-x-3">
-                      <span class="text-p-sm order-1 w-full">구매가</span>
+                      <span class="order-1 w-full text-p-sm">구매가</span>
                       <span class="text-h-md font-bold">89,000원</span>
                     </div>
                   </a>
                   <div class="relative -order-1">
-                    <a href="/" class="bg-kream-secondary block rounded-lg">
+                    <a href="/" class="block rounded-lg bg-kream-secondary">
                       <img src="/src/assets/kream/just-dropped/dropped-product-02.webp" alt="" />
                     </a>
-                    <button type="button" class="text-kream-primary absolute bottom-4 right-4 inline-flex size-6 items-center justify-center" aria-label="관심상품 담기">
+                    <button type="button" class="absolute bottom-4 right-4 inline-flex size-6 items-center justify-center text-kream-primary" aria-label="관심상품 담기">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_2006_189)">
                           <path d="M17 3H7C5.9 3 5.01 3.9 5.01 5L5 21L12 18L19 21V5C19 3.9 18.1 3 17 3ZM17 18L12 15.82L7 18V5H17V18Z" fill="currentColor" />
@@ -301,8 +301,8 @@
                       <p class="text-p-sm">Supreme Ultrasuede Mesh Baseball Jersey Navy - 24SS</p>
                     </div>
                     <div class="flex gap-1.5">
-                      <span class="text-p-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">적립</span>
-                      <span class="text-p-sm text-kream-green inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm">적립</span>
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm text-kream-green">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M9.625 1.16669H5.54167L3.5 7.58335H6.41667L4.375 12.8334H5.25L9.91667 6.41669H7.29167L9.625 1.16669Z" fill="currentColor" />
                         </svg>
@@ -310,15 +310,15 @@
                       </span>
                     </div>
                     <div class="flex flex-wrap gap-x-3">
-                      <span class="text-p-sm order-1 w-full">구매가</span>
+                      <span class="order-1 w-full text-p-sm">구매가</span>
                       <span class="text-h-md font-bold">270,00원</span>
                     </div>
                   </a>
                   <div class="relative -order-1">
-                    <a href="/" class="bg-kream-secondary block rounded-lg">
+                    <a href="/" class="block rounded-lg bg-kream-secondary">
                       <img src="/src/assets/kream/just-dropped/dropped-product-03.webp" alt="" />
                     </a>
-                    <button type="button" class="text-kream-primary absolute bottom-4 right-4 inline-flex size-6 items-center justify-center" aria-label="관심상품 담기">
+                    <button type="button" class="absolute bottom-4 right-4 inline-flex size-6 items-center justify-center text-kream-primary" aria-label="관심상품 담기">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_2006_189)">
                           <path d="M17 3H7C5.9 3 5.01 3.9 5.01 5L5 21L12 18L19 21V5C19 3.9 18.1 3 17 3ZM17 18L12 15.82L7 18V5H17V18Z" fill="currentColor" />
@@ -341,9 +341,9 @@
                       <p class="text-p-sm">Nike x Rayssa Leal SB Dunk Low PRM Pure Platinum Vivid Purple</p>
                     </div>
                     <div class="flex gap-1.5">
-                      <span class="text-p-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">적립</span>
-                      <span class="text-p-sm text-kream-red inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">품절</span>
-                      <span class="text-p-sm text-kream-green inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm">적립</span>
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm text-kream-red">품절</span>
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm text-kream-green">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M9.625 1.16669H5.54167L3.5 7.58335H6.41667L4.375 12.8334H5.25L9.91667 6.41669H7.29167L9.625 1.16669Z" fill="currentColor" />
                         </svg>
@@ -351,15 +351,15 @@
                       </span>
                     </div>
                     <div class="flex flex-wrap gap-x-3">
-                      <span class="text-p-sm order-1 w-full">구매가</span>
+                      <span class="order-1 w-full text-p-sm">구매가</span>
                       <span class="text-h-md font-bold">165,000원</span>
                     </div>
                   </a>
                   <div class="relative -order-1">
-                    <a href="/" class="bg-kream-secondary block rounded-lg">
+                    <a href="/" class="block rounded-lg bg-kream-secondary">
                       <img src="/src/assets/kream/just-dropped/dropped-product-04.webp" alt="" />
                     </a>
-                    <button type="button" class="text-kream-primary absolute bottom-4 right-4 inline-flex size-6 items-center justify-center" aria-label="관심상품 담기">
+                    <button type="button" class="absolute bottom-4 right-4 inline-flex size-6 items-center justify-center text-kream-primary" aria-label="관심상품 담기">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_2006_189)">
                           <path d="M17 3H7C5.9 3 5.01 3.9 5.01 5L5 21L12 18L19 21V5C19 3.9 18.1 3 17 3ZM17 18L12 15.82L7 18V5H17V18Z" fill="currentColor" />
@@ -382,8 +382,8 @@
                       <p class="text-p-sm">Undermycar Mu.22 Anti Fxxking Logo Play Slim Inner Hood Zip-up Melange Gray</p>
                     </div>
                     <div class="flex gap-1.5">
-                      <span class="text-p-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">적립</span>
-                      <span class="text-p-sm text-kream-green inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm">적립</span>
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm text-kream-green">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M9.625 1.16669H5.54167L3.5 7.58335H6.41667L4.375 12.8334H5.25L9.91667 6.41669H7.29167L9.625 1.16669Z" fill="currentColor" />
                         </svg>
@@ -391,15 +391,15 @@
                       </span>
                     </div>
                     <div class="flex flex-wrap gap-x-3">
-                      <span class="text-p-sm order-1 w-full">구매가</span>
+                      <span class="order-1 w-full text-p-sm">구매가</span>
                       <span class="text-h-md font-bold">89,000원</span>
                     </div>
                   </a>
                   <div class="relative -order-1">
-                    <a href="/" class="bg-kream-secondary block rounded-lg">
+                    <a href="/" class="block rounded-lg bg-kream-secondary">
                       <img src="/src/assets/kream/just-dropped/dropped-product-05.webp" alt="" />
                     </a>
-                    <button type="button" class="text-kream-primary absolute bottom-4 right-4 inline-flex size-6 items-center justify-center" aria-label="관심상품 담기">
+                    <button type="button" class="absolute bottom-4 right-4 inline-flex size-6 items-center justify-center text-kream-primary" aria-label="관심상품 담기">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_2006_189)">
                           <path d="M17 3H7C5.9 3 5.01 3.9 5.01 5L5 21L12 18L19 21V5C19 3.9 18.1 3 17 3ZM17 18L12 15.82L7 18V5H17V18Z" fill="currentColor" />
@@ -424,11 +424,11 @@
               <span class="text-h-md font-bold">Top Brand</span>
               <span class="text-p-md">인기 탑 브랜드</span>
             </h2>
-            <ul class="sm:max-container text-p-sm grid grid-cols-2 gap-x-5 gap-y-3 sm:mx-auto sm:grid-cols-5" id="list1">
+            <ul class="sm:max-container grid grid-cols-2 gap-x-5 gap-y-3 text-p-sm sm:mx-auto sm:grid-cols-5" id="list1">
               <li>
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/top-brand/top-brand-product-01.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/top-brand/top-brand-product-01.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">나이키</figcaption>
                   </figure>
                 </a>
@@ -436,7 +436,7 @@
               <li>
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/top-brand/top-brand-product-02.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/top-brand/top-brand-product-02.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">아임앱 스튜디오</figcaption>
                   </figure>
                 </a>
@@ -444,7 +444,7 @@
               <li class="hidden sm:block">
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/top-brand/top-brand-product-03.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/top-brand/top-brand-product-03.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">스투시</figcaption>
                   </figure>
                 </a>
@@ -452,7 +452,7 @@
               <li class="hidden sm:block">
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/top-brand/top-brand-product-04.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/top-brand/top-brand-product-04.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">크롬하츠</figcaption>
                   </figure>
                 </a>
@@ -460,7 +460,7 @@
               <li class="hidden sm:block">
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/top-brand/top-brand-product-05.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/top-brand/top-brand-product-05.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">아디다스</figcaption>
                   </figure>
                 </a>
@@ -468,7 +468,7 @@
               <li class="hidden sm:block">
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/top-brand/top-brand-product-06.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/top-brand/top-brand-product-06.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">칼하트 WIP</figcaption>
                   </figure>
                 </a>
@@ -476,7 +476,7 @@
               <li class="hidden sm:block">
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/top-brand/top-brand-product-07.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/top-brand/top-brand-product-07.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">베이프</figcaption>
                   </figure>
                 </a>
@@ -484,7 +484,7 @@
               <li class="hidden sm:block">
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/top-brand/top-brand-product-08.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/top-brand/top-brand-product-08.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">니들스</figcaption>
                   </figure>
                 </a>
@@ -492,7 +492,7 @@
               <li class="hidden sm:block">
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/top-brand/top-brand-product-09.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/top-brand/top-brand-product-09.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">캐피탈</figcaption>
                   </figure>
                 </a>
@@ -500,13 +500,13 @@
               <li class="hidden sm:block">
                 <a href="/">
                   <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
-                    <img class="bg-kream-secondary rounded-lg" src="/src/assets/kream/top-brand/top-brand-product-10.webp" alt="" width="525" height="230" />
+                    <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/top-brand/top-brand-product-10.webp" alt="" width="525" height="230" />
                     <figcaption class="shrink-0">휴먼 메이드</figcaption>
                   </figure>
                 </a>
               </li>
             </ul>
-            <button type="button" data-list-id="list1" class="kream--more text-p-sm mx-auto my-4 flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle sm:hidden">더보기</button>
+            <button type="button" data-list-id="list1" class="kream--more mx-auto my-4 flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm sm:hidden">더보기</button>
           </section>
           <div class="max-container mx-auto w-full px-5">
             <div class="border-lightgray border-t"></div>
@@ -517,7 +517,7 @@
               <span class="text-h-md font-bold">편안함에 개성까지</span>
               <span class="text-p-md">내맘대로 꾸며신는 매력</span>
             </p>
-            <ul class="scrollbar-hide grid grid-cols-[repeat(5,minmax(232px,_1fr))] gap-5 overflow-x-scroll">
+            <ul class="grid grid-cols-[repeat(5,minmax(232px,_1fr))] gap-5 overflow-x-scroll scrollbar-hide">
               <li>
                 <article class="flex flex-col gap-3">
                   <a href="/" class="contents">
@@ -526,8 +526,8 @@
                       <p class="text-p-sm">Crocs x Levi's All Terrain Clog Bone Blue</p>
                     </div>
                     <div class="flex gap-1.5">
-                      <span class="text-p-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">적립</span>
-                      <span class="text-p-sm text-kream-green inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm">적립</span>
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm text-kream-green">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M9.625 1.16669H5.54167L3.5 7.58335H6.41667L4.375 12.8334H5.25L9.91667 6.41669H7.29167L9.625 1.16669Z" fill="currentColor" />
                         </svg>
@@ -535,15 +535,15 @@
                       </span>
                     </div>
                     <div class="flex flex-wrap gap-x-3">
-                      <span class="text-p-sm order-1 w-full">구매가</span>
+                      <span class="order-1 w-full text-p-sm">구매가</span>
                       <span class="text-h-md font-bold">120,000원</span>
                     </div>
                   </a>
                   <div class="relative -order-1">
-                    <a href="/" class="bg-kream-secondary block rounded-lg">
+                    <a href="/" class="block rounded-lg bg-kream-secondary">
                       <img src="/src/assets/kream/crocs/crocs-product-01.webp" alt="" />
                     </a>
-                    <button type="button" class="text-kream-primary absolute bottom-4 right-4 inline-flex size-6 items-center justify-center" aria-label="관심상품 담기">
+                    <button type="button" class="absolute bottom-4 right-4 inline-flex size-6 items-center justify-center text-kream-primary" aria-label="관심상품 담기">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_2006_189)">
                           <path d="M17 3H7C5.9 3 5.01 3.9 5.01 5L5 21L12 18L19 21V5C19 3.9 18.1 3 17 3ZM17 18L12 15.82L7 18V5H17V18Z" fill="currentColor" />
@@ -566,8 +566,8 @@
                       <p class="text-p-sm">Crocs Classic Metallic Clog Silver</p>
                     </div>
                     <div class="flex gap-1.5">
-                      <span class="text-p-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">적립</span>
-                      <span class="text-p-sm text-kream-green inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm">적립</span>
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm text-kream-green">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M9.625 1.16669H5.54167L3.5 7.58335H6.41667L4.375 12.8334H5.25L9.91667 6.41669H7.29167L9.625 1.16669Z" fill="currentColor" />
                         </svg>
@@ -575,15 +575,15 @@
                       </span>
                     </div>
                     <div class="flex flex-wrap gap-x-3">
-                      <span class="text-p-sm order-1 w-full">구매가</span>
+                      <span class="order-1 w-full text-p-sm">구매가</span>
                       <span class="text-h-md font-bold">76,500원</span>
                     </div>
                   </a>
                   <div class="relative -order-1">
-                    <a href="/" class="bg-kream-secondary block rounded-lg">
+                    <a href="/" class="block rounded-lg bg-kream-secondary">
                       <img src="/src/assets/kream/crocs/crocs-product-02.webp" alt="" />
                     </a>
-                    <button type="button" class="text-kream-primary absolute bottom-4 right-4 inline-flex size-6 items-center justify-center" aria-label="관심상품 담기">
+                    <button type="button" class="absolute bottom-4 right-4 inline-flex size-6 items-center justify-center text-kream-primary" aria-label="관심상품 담기">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_2006_189)">
                           <path d="M17 3H7C5.9 3 5.01 3.9 5.01 5L5 21L12 18L19 21V5C19 3.9 18.1 3 17 3ZM17 18L12 15.82L7 18V5H17V18Z" fill="currentColor" />
@@ -606,8 +606,8 @@
                       <p class="text-p-sm">Crocs x Salehe Bembury Pollex Clog Niagara</p>
                     </div>
                     <div class="flex gap-1.5">
-                      <span class="text-p-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">적립</span>
-                      <span class="text-p-sm text-kream-green inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm">적립</span>
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm text-kream-green">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M9.625 1.16669H5.54167L3.5 7.58335H6.41667L4.375 12.8334H5.25L9.91667 6.41669H7.29167L9.625 1.16669Z" fill="currentColor" />
                         </svg>
@@ -615,15 +615,15 @@
                       </span>
                     </div>
                     <div class="flex flex-wrap gap-x-3">
-                      <span class="text-p-sm order-1 w-full">구매가</span>
+                      <span class="order-1 w-full text-p-sm">구매가</span>
                       <span class="text-h-md font-bold">120,00원</span>
                     </div>
                   </a>
                   <div class="relative -order-1">
-                    <a href="/" class="bg-kream-secondary block rounded-lg">
+                    <a href="/" class="block rounded-lg bg-kream-secondary">
                       <img src="/src/assets/kream/crocs/crocs-product-03.webp" alt="" />
                     </a>
-                    <button type="button" class="text-kream-primary absolute bottom-4 right-4 inline-flex size-6 items-center justify-center" aria-label="관심상품 담기">
+                    <button type="button" class="absolute bottom-4 right-4 inline-flex size-6 items-center justify-center text-kream-primary" aria-label="관심상품 담기">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_2006_189)">
                           <path d="M17 3H7C5.9 3 5.01 3.9 5.01 5L5 21L12 18L19 21V5C19 3.9 18.1 3 17 3ZM17 18L12 15.82L7 18V5H17V18Z" fill="currentColor" />
@@ -646,8 +646,8 @@
                       <p class="text-p-sm">(W) Crocs x Hello Kitty Classic Clog White</p>
                     </div>
                     <div class="flex gap-1.5">
-                      <span class="text-p-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">적립</span>
-                      <span class="text-p-sm text-kream-green inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm">적립</span>
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm text-kream-green">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M9.625 1.16669H5.54167L3.5 7.58335H6.41667L4.375 12.8334H5.25L9.91667 6.41669H7.29167L9.625 1.16669Z" fill="currentColor" />
                         </svg>
@@ -655,15 +655,15 @@
                       </span>
                     </div>
                     <div class="flex flex-wrap gap-x-3">
-                      <span class="text-p-sm order-1 w-full">구매가</span>
+                      <span class="order-1 w-full text-p-sm">구매가</span>
                       <span class="text-h-md font-bold">90,000원</span>
                     </div>
                   </a>
                   <div class="relative -order-1">
-                    <a href="/" class="bg-kream-secondary block rounded-lg">
+                    <a href="/" class="block rounded-lg bg-kream-secondary">
                       <img src="/src/assets/kream/crocs/crocs-product-04.webp" alt="" />
                     </a>
-                    <button type="button" class="text-kream-primary absolute bottom-4 right-4 inline-flex size-6 items-center justify-center" aria-label="관심상품 담기">
+                    <button type="button" class="absolute bottom-4 right-4 inline-flex size-6 items-center justify-center text-kream-primary" aria-label="관심상품 담기">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_2006_189)">
                           <path d="M17 3H7C5.9 3 5.01 3.9 5.01 5L5 21L12 18L19 21V5C19 3.9 18.1 3 17 3ZM17 18L12 15.82L7 18V5H17V18Z" fill="currentColor" />
@@ -686,8 +686,8 @@
                       <p class="text-p-sm">Crocs x Palace Classic Clog Black</p>
                     </div>
                     <div class="flex gap-1.5">
-                      <span class="text-p-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">적립</span>
-                      <span class="text-p-sm text-kream-green inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle">
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm">적립</span>
+                      <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm text-kream-green">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M9.625 1.16669H5.54167L3.5 7.58335H6.41667L4.375 12.8334H5.25L9.91667 6.41669H7.29167L9.625 1.16669Z" fill="currentColor" />
                         </svg>
@@ -695,15 +695,15 @@
                       </span>
                     </div>
                     <div class="flex flex-wrap gap-x-3">
-                      <span class="text-p-sm order-1 w-full">구매가</span>
+                      <span class="order-1 w-full text-p-sm">구매가</span>
                       <span class="text-h-md font-bold">120,000원</span>
                     </div>
                   </a>
                   <div class="relative -order-1">
-                    <a href="/" class="bg-kream-secondary block rounded-lg">
+                    <a href="/" class="block rounded-lg bg-kream-secondary">
                       <img src="/src/assets/kream/crocs/crocs-product-05.webp" alt="" />
                     </a>
-                    <button type="button" class="text-kream-primary absolute bottom-4 right-4 inline-flex size-6 items-center justify-center" aria-label="관심상품 담기">
+                    <button type="button" class="absolute bottom-4 right-4 inline-flex size-6 items-center justify-center text-kream-primary" aria-label="관심상품 담기">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_2006_189)">
                           <path d="M17 3H7C5.9 3 5.01 3.9 5.01 5L5 21L12 18L19 21V5C19 3.9 18.1 3 17 3ZM17 18L12 15.82L7 18V5H17V18Z" fill="currentColor" />
@@ -725,7 +725,7 @@
     </main>
     <div class="max-container mx-auto flex flex-col gap-9 px-5 py-9 sm:flex-row sm:flex-wrap sm:gap-x-[140px] lg:max-w-[1280px] lg:items-start">
       <div class="sm:w-full lg:order-1 lg:ml-auto lg:w-auto">
-        <strong class="text-h-md mb-1">고객센터 1588-7813</strong>
+        <strong class="mb-1 text-h-md">고객센터 1588-7813</strong>
         <ul class="flex flex-col gap-1">
           <li>운영시간 평일 10:00 - 18:00 (토·일, 공휴일 휴무)</li>
           <li>점심시간 평일 13:00 - 14:00</li>
@@ -821,7 +821,7 @@
       </div>
       <!-- 저작권 정보 -->
       <div class="lg:row-start-3 lg:place-self-end">
-        <small class="text-p-sm block text-center lg:text-left">&copy; KREAM Corp.</small>
+        <small class="block text-center text-p-sm lg:text-left">&copy; KREAM Corp.</small>
       </div>
     </footer>
   </body>

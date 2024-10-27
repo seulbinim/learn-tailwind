@@ -551,14 +551,14 @@ video {
 .top-4 {
   top: 1rem;
 }
-.top-\[65px\] {
-  top: 65px;
-}
 .top-\[66px\] {
   top: 66px;
 }
 .z-10 {
   z-index: 10;
+}
+.z-50 {
+  z-index: 50;
 }
 .-order-1 {
   order: -1;
@@ -833,14 +833,8 @@ video {
 .self-center {
   align-self: center;
 }
-.overflow-y-hidden {
-  overflow-y: hidden;
-}
 .overflow-x-scroll {
   overflow-x: scroll;
-}
-.overflow-y-scroll {
-  overflow-y: scroll;
 }
 .rounded-2xl {
   border-radius: 1rem;
@@ -1175,6 +1169,7 @@ video {
 .max-container {
     max-width: 80rem;
   }
+/* Chrome, Safari and Opera */
 :root {
   --text-sm: 0.75rem; /* 12px */
   --text-md: 1rem; /* 16px */
