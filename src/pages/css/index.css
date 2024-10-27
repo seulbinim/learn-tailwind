@@ -554,6 +554,9 @@ video {
 .top-\[65px\] {
   top: 65px;
 }
+.top-\[66px\] {
+  top: 66px;
+}
 .z-10 {
   z-index: 10;
 }
@@ -832,6 +835,9 @@ video {
 }
 .overflow-x-scroll {
   overflow-x: scroll;
+}
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 .rounded-2xl {
   border-radius: 1rem;
@@ -1154,6 +1160,13 @@ video {
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 /* 최소 600px 이상 최대 1024px 이하 */
 .max-container {
