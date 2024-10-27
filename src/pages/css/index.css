@@ -830,6 +830,9 @@ video {
 .self-center {
   align-self: center;
 }
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
 .rounded-2xl {
   border-radius: 1rem;
 }
