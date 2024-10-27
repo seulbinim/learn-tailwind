@@ -554,6 +554,9 @@ video {
 .top-\[65px\] {
   top: 65px;
 }
+.z-10 {
+  z-index: 10;
+}
 .-order-1 {
   order: -1;
 }
@@ -743,11 +746,11 @@ video {
 .grid-cols-\[1fr_auto_auto\] {
   grid-template-columns: 1fr auto auto;
 }
-.grid-cols-\[repeat\(5\2c minmax\(232px\2c _1fr\)\)\] {
-  grid-template-columns: repeat(5,minmax(232px, 1fr));
-}
 .grid-cols-\[repeat\(2\2c _auto\)\] {
   grid-template-columns: repeat(2, auto);
+}
+.grid-cols-\[repeat\(5\2c minmax\(232px\2c _1fr\)\)\] {
+  grid-template-columns: repeat(5,minmax(232px, 1fr));
 }
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
