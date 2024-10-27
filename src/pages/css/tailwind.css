@@ -1,0 +1,36 @@
+@import './../../styles/fonts.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@layer utilities {
+  /* 최소 600px 이상 최대 1024px 이하 */
+  .min-max-container {
+    min-width: 37.5rem;
+    max-width: 64rem;
+  }
+
+  .max-container {
+    max-width: 80rem;
+  }
+}
+
+:root {
+  --text-sm: 0.75rem; /* 12px */
+  --text-md: 1rem; /* 16px */
+  --text-lg: 1.333rem; /* 21.3279px */
+  --text-xl: 1.775rem; /* 28.43px */
+  --text-2xl: 2.3686rem; /* 37.8969px */
+}
+
+/* focus 스타일링 */
+:focus {
+  @apply focus:ring-kream-blue focus:rounded-xs focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.kream--button {
+  @apply text-p-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle;
+}
+
+.kream--components {
+  @apply inline-flex gap-4 border-2 border-current p-4;
+}

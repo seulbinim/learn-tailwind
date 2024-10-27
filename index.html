@@ -6,27 +6,45 @@
     <title>Tailwind CSS</title>
     <link rel="icon" href="/src/assets/favicon/tailwind.svg" />
     <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="stylesheet" href="/src/pages/css/index.css" />
   </head>
-  <body class="flex h-screen flex-col items-center justify-center bg-slate-500 font-pretendard text-white">
-    <h1 class="text-3xl font-bold">Tailwind CSS 예제</h1>
-    <ul class="my-10">
-      <li>
-        <a href="/src/views/01-utility-first.html">유틸리티 퍼스트 예시</a>
-      </li>
-      <li><a href="/src/views/02-responsive.html">반응형 디자인</a></li>
-      <li><a href="/src/views/03-state.html">상태 디자인</a></li>
-      <li><a href="/src/views/04-arbitrary.html">사용자 정의 값</a></li>
-      <li><a href="/src/views/05-apply.html">스타일 재사용(@apple)</a></li>
-      <li><a href="/src/views/06-layer.html">사용자 정의 스타일(@layer)</a></li>
-      <li><a href="/src/views/07-built-in.html">빌트인 함수</a></li>
-      <li><a href="/src/views/08-theme-config.html">테마 환경구성</a></li>
-      <li><a href="/src/views/09-notification.html">알림</a></li>
-      <li><a href="/src/views/10-checkbox.html">체크박스</a></li>
-      <li><a href="/src/views/11-netflix-header.html">넷플릭스 헤더</a></li>
-      <li><a href="/src/views/12-apple-footer.html">애플 푸터</a></li>
-      <li><a href="/src/views/13-on-off-button.html">온/오프 버튼</a></li>
-      <li><a href="/src/views/14-avatar-list.html">아바타 목록</a></li>
-      <li><a href="/src/views/15-search-bar.html">네이버 검색 바</a></li>
-    </ul>
+  <body class="bg-slate-500 font-pretendard text-white">
+    <div class="container m-10 mx-auto grid grid-cols-[repeat(2,_auto)] grid-rows-2 justify-center gap-5 p-5">
+      <h1 class="col-span-2 text-3xl font-bold">Tailwind CSS</h1>
+      <h2 class="col-start-1 col-end-2 row-start-2 row-end-3 text-lg font-bold">How to Use</h2>
+      <ul>
+        <li><a href="/src/views/01-utility-first.html">TailwindCSS를 활용한 UI</a></li>
+        <li><a href="/src/views/02-responsive.html">반응형 디자인</a></li>
+        <li><a href="/src/views/03-state.html">상태 디자인</a></li>
+        <li><a href="/src/views/04-arbitrary.html">사용자 정의 값</a></li>
+        <li><a href="/src/views/05-apply.html">스타일 재사용(@apple)</a></li>
+        <li><a href="/src/views/06-layer.html">사용자 정의 스타일(@layer)</a></li>
+        <li><a href="/src/views/07-built-in.html">빌트인 함수</a></li>
+        <li><a href="/src/views/08-theme-config.html">테마 환경구성</a></li>
+        <li><a href="/src/views/09-notification.html">알림</a></li>
+        <li><a href="/src/views/10-checkbox.html">체크박스</a></li>
+        <li><a href="/src/views/11-netflix-header.html">넷플릭스 헤더</a></li>
+
+        <li><a href="/src/views/12-apple-footer.html">애플 푸터</a></li>
+        <li><a href="/src/views/13-on-off-button.html">온/오프 버튼</a></li>
+        <li><a href="/src/views/14-avatar-list.html">아바타 목록</a></li>
+        <li><a href="/src/views/15-search-bar.html">네이버 검색 바</a></li>
+      </ul>
+      <h2 class="col-start-2 col-end-3 row-start-2 row-end-3 text-lg font-bold">Kream UI</h2>
+      <ul>
+        <li><a href="/src/pages/components/01-atoms-molecules.html">원자/분자 컴포넌트</a></li>
+        <li><a href="/src/pages/components/02-product-card.html">크림 상품 카드</a></li>
+        <li><a href="/src/pages/components/03-header.html">크림 헤더</a></li>
+        <li><a href="/src/pages/components/04-tabs.html">크림 탭 UI</a></li>
+        <li><a href="/src/pages/components/05-recommand.html">크림 추천</a></li>
+        <li><a href="/src/pages/components/06-just-dropped.html">크림 발매 상품</a></li>
+        <li><a href="/src/pages/components/07-top-brand.html">크림 인기 탑 브랜드</a></li>
+        <li><a href="/src/pages/components/07-banner.html">크림 배너</a></li>
+        <li><a href="/src/pages/components/08-customer-service.html">크림 고객 서비스</a></li>
+        <li><a href="/src/pages/components/09-footer.html">크림 푸터</a></li>
+        <li><a href="/src/pages/kream-finish.html">크림 완성</a></li>
+        <li><a href="/src/pages/kream.html">크림 작성 중</a></li>
+      </ul>
+    </div>
   </body>
 </html>
