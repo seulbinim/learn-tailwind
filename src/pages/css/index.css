@@ -833,6 +833,9 @@ video {
 .self-center {
   align-self: center;
 }
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
 .overflow-x-scroll {
   overflow-x: scroll;
 }
