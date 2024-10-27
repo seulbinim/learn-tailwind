@@ -1,0 +1,26 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .logo-bg { fill: #000000; }
+      .logo-text { fill: #FFFFFF; }
+    }
+    @media (prefers-color-scheme: light) {
+      .logo-bg { fill: #FFFFFF; }
+      .logo-text { fill: #000000; }
+    }
+  </style>
+  
+  <!-- 배경 사각형 -->
+  <rect class="logo-bg" x="0" y="0" width="100" height="100" rx="10"/>
+  
+  <!-- KREAM 텍스트 -->
+  <text class="logo-text" 
+        x="50%" y="50%" 
+        font-family="Arial, sans-serif" 
+        font-size="22" 
+        font-weight="bold"
+        text-anchor="middle" 
+        dominant-baseline="middle">
+    KREAM
+  </text>
+</svg>
