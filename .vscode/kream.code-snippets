@@ -194,7 +194,7 @@
   },
   "Kream Badge Text(Red) ": {
     "prefix": "kream-badge-text-red",
-    "body": ["<span class=\"text-kream-green text-p-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle\">배지 텍스트$1</span>            "],
+    "body": ["<span class=\"text-kream-red text-p-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle\">배지 텍스트$1</span>            "],
     "description": "Kream-badge-text(Red) ",
   },
   "Kream Badge (Delivery) ": {
