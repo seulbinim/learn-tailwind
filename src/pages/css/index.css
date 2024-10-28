@@ -651,6 +651,10 @@ video {
 .hidden {
   display: none;
 }
+.size-12 {
+  width: 3rem;
+  height: 3rem;
+}
 .size-3 {
   width: 0.75rem;
   height: 0.75rem;
@@ -876,10 +880,6 @@ video {
 .border-transparent {
   border-color: transparent;
 }
-.border-kream-green {
-  --tw-border-opacity: 1;
-  border-color: rgb(51 169 90 / var(--tw-border-opacity));
-}
 .border-t-slate-500 {
   --tw-border-opacity: 1;
   border-top-color: rgb(100 116 139 / var(--tw-border-opacity));
@@ -903,6 +903,10 @@ video {
 .bg-green-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+.bg-kream-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 .bg-kream-orange {
   --tw-bg-opacity: 1;
@@ -1266,6 +1270,10 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(161 98 7 / var(--tw-border-opacity));
 }
+.hover\:bg-kream-green:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 169 90 / var(--tw-bg-opacity));
+}
 .hover\:bg-primary-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(34 190 97 / var(--tw-bg-opacity));
@@ -1273,14 +1281,6 @@ video {
 .hover\:bg-tertiary-200:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(227 144 66 / var(--tw-bg-opacity));
-}
-.hover\:bg-kream-green:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 169 90 / var(--tw-bg-opacity));
-}
-.hover\:text-kream-red:hover {
-  --tw-text-opacity: 1;
-  color: rgb(176 44 32 / var(--tw-text-opacity));
 }
 .hover\:text-kream-white:hover {
   --tw-text-opacity: 1;
@@ -1306,19 +1306,12 @@ video {
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
-.focus\:ring-kream-green:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(51 169 90 / var(--tw-ring-opacity));
-}
 .focus\:ring-yellow-700:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(161 98 7 / var(--tw-ring-opacity));
 }
 .focus\:ring-offset-2:focus {
   --tw-ring-offset-width: 2px;
-}
-.focus\:ring-offset-4:focus {
-  --tw-ring-offset-width: 4px;
 }
 .active\:text-red-500:active {
   --tw-text-opacity: 1;
@@ -1602,10 +1595,6 @@ video {
   }
   .lg\:text-base {
     font-size: 1rem;
-  }
-  .lg\:text-p-md {
-    font-size: calc(var(--text-sm) * 1.333);
-    line-height: 1.6;
   }
 }
 @media (min-width: 1440px) {

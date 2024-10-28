@@ -30,7 +30,7 @@
     </div>
     <hr class="my-5" />
     <b class="block">배지</b>
-    <div class="kream-components">
+    <div class="kream--components">
       <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm">배지 텍스트</span>
       <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm text-kream-green">배지 텍스트</span>
       <span class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm text-kream-red">배지 텍스트</span>
@@ -43,7 +43,7 @@
     </div>
     <hr class="my-5" />
     <b class="block">버튼</b>
-    <div class="kream-components">
+    <div class="kream--components">
       <button type="button" class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm hover:bg-kream-green hover:text-kream-white focus:bg-kream-green focus:text-kream-white">버튼 텍스트</button>
       <button type="button" class="inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm text-kream-green">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,10 +52,9 @@
         빠른 배송
       </button>
     </div>
-
     <hr class="my-5" />
-    <b class="block">아이콘 버튼</b>
-    <div class="kream-components">
+    <b class="block">아이콘 버튼 - 알림, 검색, 메뉴 바</b>
+    <div class="kream--components">
       <button type="button" class="inline-flex size-6 items-center justify-center" aria-label="알림">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_2008_1954)">
@@ -93,10 +92,80 @@
         </svg>
       </button>
     </div>
+    <hr class="my-5" />
+    <b class="block">아이콘 버튼 - 이전 / 다음 버튼</b>
+    <div class="kream--components bg-kream-black p-4">
+      <button type="button" class="inline-flex size-12 items-center justify-center align-middle" aria-label="이전 항목 보기">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_2001_649)">
+            <path d="M35.54 7.54L32 4L12 24L32 44L35.54 40.46L19.08 24L35.54 7.54Z" fill="#fff" />
+          </g>
+          <defs>
+            <clipPath id="clip0_2001_649">
+              <rect width="48" height="48" fill="#fff" />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+      <button type="button" class="inline-flex size-12 items-center justify-center align-middle" aria-label="다음 항목 보기">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_2001_650)">
+            <path d="M12.46 40.46L16 44L36 24L16 4L12.46 7.54L28.92 24L12.46 40.46Z" fill="#fff" />
+          </g>
+          <defs>
+            <clipPath id="clip0_2001_650">
+              <rect width="48" height="48" fill="#fff" />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+    </div>
+    <hr class="my-5" />
+    <b class="block">탭 UI</b>
+    <div class="kream--components flex flex-col gap-4">
+      <button tabindex="-1" role="tab" id="tab-1" aria-controls="tabpanel-1" aria-selected="true" type="button" class="h-9.5 border-b-4 border-current text-p-sm font-bold sm:text-p-lg">탭 텍스트</button>
+      <div class="tablist flex gap-4" role="tablist">
+        <button tabindex="-1" role="tab" id="tab-1" aria-controls="tabpanel-1" aria-selected="true" type="button" class="h-9.5 border-b-4 border-current text-p-sm font-bold sm:text-p-lg">추천</button>
+        <button tabindex="-1" role="tab" id="tab-2" aria-controls="tabpanel-2" aria-selected="false" type="button" class="h-9.5 border-b-4 border-transparent text-p-sm sm:text-p-lg">발견</button>
+      </div>
+      <div role="tabpanel" id="tabpanel-1" aria-labelledby="tab-1" class="tabpanel">탭 패널 콘텐츠</div>
+      <div class="tabs">
+        <div class="tablist manual" role="tablist">
+          <button tabindex="-1" role="tab" id="tab-1" aria-controls="tabpanel-1" aria-selected="true" type="button" class="h-9.5 border-b-4 border-current text-p-sm font-bold sm:text-p-lg">추천</button>
+          <button tabindex="-1" role="tab" id="tab-2" aria-controls="tabpanel-2" aria-selected="false" type="button" class="h-9.5 border-b-4 border-transparent text-p-sm sm:text-p-lg">랭킹</button>
+        </div>
+        <div role="tabpanel" id="tabpanel-1" aria-labelledby="tab-1" class="tabpanel">콘텐츠 tab-1</div>
+        <div role="tabpanel" id="tabpanel-2" aria-labelledby="tab-2" class="tabpanel">콘텐츠 tab-2</div>
+      </div>
+    </div>
+    <hr class="my-5" />
+    <b class="block">텍스트 컴포넌트 - 제목, 단락, 레이블</b>
+    <div class="kream--components flex flex-col gap-4">
+      <span class="text-h-md font-bold">제목 텍스트</span>
+      <span class="text-p-md">단락 텍스트</span>
+      <span class="text-p-sm">단락 텍스트</span>
+      <span class="text-h-md font-bold not-italic text-kream-red">10%<span class="sr-only">할인</span></span>
+      <span class="text-h-md font-bold">76,500원</span>
+      <span class="text-p-sm">구매가</span>
+    </div>
+    <hr class="my-5" />
+    <b class="block">섹션 제목</b>
+    <div class="kream--components">
+      <h2 class="flex flex-col">
+        <span class="text-h-md font-bold">Top Brand</span>
+        <span class="text-p-md">인기 탑 브랜드</span>
+      </h2>
+    </div>
 
     <hr class="my-5" />
-
-    <b class="block"></b>
-    <div class="kream-components"></div>
+    <b class="block">링크 컴포넌트 - 이미지</b>
+    <div class="kream--components">
+      <a href="/" class="block">
+        <figure class="min-w-57 flex flex-col items-center justify-center gap-2">
+          <img class="rounded-lg bg-kream-secondary" src="/src/assets/kream/recommand/recommand-product-01.webp" alt="" width="525" height="230" />
+          <figcaption class="shrink-0">남성추천</figcaption>
+        </figure>
+      </a>
+    </div>
   </body>
 </html>
