@@ -54,16 +54,19 @@
         </svg>
       </button>
       <nav>
-        <h2 class="sr-only">멤버 서비스</h2>
-        <ul class="hidden sm:block">
-          <li><a href="/">고객센터</a></li>
-          <li><a href="/">마이페이지</a></li>
-          <li><a href="/">관심</a></li>
-          <li><a href="/">알림</a></li>
-          <li><a href="/">로그인</a></li>
-        </ul>
-        <h2 class="sr-only">카테고리</h2>
-        <div class="fixed inset-x-0 bottom-0 grid grid-cols-4 justify-items-center border-t-2 border-current bg-kream-white p-5">
+        <div class="fixed right-0 top-[66px] h-svh w-1/2 bg-kream-white shadow-lg sm:static sm:h-auto sm:w-auto sm:bg-transparent sm:shadow-none">
+          <h2 class="sr-only">멤버 서비스</h2>
+          <ul class="space-y-4 px-5 py-10 text-center">
+            <li><a href="/">고객센터</a></li>
+            <li><a href="/">마이페이지</a></li>
+            <li><a href="/">관심</a></li>
+            <li><a href="/">알림</a></li>
+            <li><a href="/">로그인</a></li>
+          </ul>
+          <button class="sm:hidden" type="button" aria-label="메뉴 닫기"><span class="fas fa-xmark absolute right-4 top-4"></span></button>
+        </div>
+        <div class="fixed inset-x-0 bottom-0 grid grid-cols-4 justify-items-center border-t-2 border-current bg-kream-white p-5 sm:static sm:block sm:border-0 sm:bg-transparent sm:p-0">
+          <h2 class="sr-only">카테고리</h2>
           <ul class="contents">
             <li>
               <a href="/"><span class="fas fa-house sm:hidden"></span><span class="hidden uppercase sm:block">home</span></a>
