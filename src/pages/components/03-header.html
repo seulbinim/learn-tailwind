@@ -16,7 +16,7 @@
     <script type="module" src="/src/js/kream.js"></script>
   </head>
   <body class="bg-kream-white pb-16 font-pretendard text-kream-primary sm:pb-0 dark:bg-kream-primary dark:text-kream-white">
-    <header class="flex gap-2 border-b-2 border-current p-5">
+    <header class="sm:max-container flex gap-2 border-b-2 border-current p-5 sm:mx-auto sm:flex-wrap sm:border-none">
       <h1 class="mr-auto">
         <a href="/" class="kream--logo inline-flex align-middle">
           <svg class="block" xmlns="http://www.w3.org/2000/svg" width="134" height="22" viewBox="0 0 134 22" fill="none">
@@ -53,10 +53,10 @@
           </defs>
         </svg>
       </button>
-      <nav>
-        <div class="fixed right-0 top-[66px] h-svh w-1/2 bg-kream-white shadow-lg sm:static sm:h-auto sm:w-auto sm:bg-transparent sm:shadow-none">
+      <nav class="sm:contents">
+        <div class="fixed right-0 top-[66px] -order-1 h-svh w-1/2 bg-kream-white shadow-lg sm:static sm:h-auto sm:w-full sm:bg-transparent sm:shadow-none">
           <h2 class="sr-only">멤버 서비스</h2>
-          <ul class="space-y-4 px-5 py-10 text-center">
+          <ul class="space-y-4 px-5 py-10 text-center sm:flex sm:justify-end sm:gap-5 sm:space-y-0 sm:p-0">
             <li><a href="/">고객센터</a></li>
             <li><a href="/">마이페이지</a></li>
             <li><a href="/">관심</a></li>
@@ -65,7 +65,7 @@
           </ul>
           <button class="sm:hidden" type="button" aria-label="메뉴 닫기"><span class="fas fa-xmark absolute right-4 top-4"></span></button>
         </div>
-        <div class="fixed inset-x-0 bottom-0 grid grid-cols-4 justify-items-center border-t-2 border-current bg-kream-white p-5 sm:static sm:block sm:border-0 sm:bg-transparent sm:p-0">
+        <div class="fixed inset-x-0 bottom-0 grid grid-cols-4 justify-items-center border-t-2 border-current bg-kream-white p-5 sm:static sm:flex sm:gap-5 sm:border-0 sm:bg-transparent sm:p-0">
           <h2 class="sr-only">카테고리</h2>
           <ul class="contents">
             <li>
