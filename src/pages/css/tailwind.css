@@ -33,11 +33,11 @@
 
 /* focus 스타일링 */
 :focus {
-  @apply focus:ring-kream-blue focus:rounded-xs focus:outline-none focus:ring-2 focus:ring-offset-2;
+  @apply focus:rounded-xs focus:outline-none focus:ring-2 focus:ring-kream-green focus:ring-offset-2;
 }
 
 .kream--button {
-  @apply text-p-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle;
+  @apply inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle text-p-sm;
 }
 
 .kream--components {
