@@ -759,6 +759,9 @@ video {
 .grid-cols-\[repeat\(5\2c minmax\(232px\2c _1fr\)\)\] {
   grid-template-columns: repeat(5,minmax(232px, 1fr));
 }
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
 .grid-rows-2 {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
@@ -872,6 +875,10 @@ video {
 }
 .border-current {
   border-color: currentColor;
+}
+.border-kream-gray {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 203 203 / var(--tw-border-opacity));
 }
 .border-primary-100 {
   --tw-border-opacity: 1;
