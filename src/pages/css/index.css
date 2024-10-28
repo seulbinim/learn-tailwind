@@ -951,6 +951,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(51 169 90 / var(--tw-bg-opacity));
 }
+.bg-yellow-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
+}
 .bg-\[url\(\/src\/assets\/icon\/checkbox-circle-unchecked\.svg\)\] {
   background-image: url(/src/assets/icon/checkbox-circle-unchecked.svg);
 }
@@ -1373,6 +1377,9 @@ video {
   }
   .sm\:flex {
     display: flex;
+  }
+  .sm\:inline-flex {
+    display: inline-flex;
   }
   .sm\:hidden {
     display: none;
